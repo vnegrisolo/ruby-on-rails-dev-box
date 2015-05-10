@@ -7,3 +7,4 @@ long_description 'Installs/Configures ruby-on-rails-dev-box'
 version '0.0.1'
 
 depends 'apt'
+depends 'git'
