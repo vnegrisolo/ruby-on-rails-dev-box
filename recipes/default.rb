@@ -10,3 +10,19 @@
 include_recipe 'apt'
 include_recipe 'git'
 
+%w(vfn).each do |folder|
+  directory "#{node[:projects_folder]}/#{folder}" do
+    mode '0755'
+    action :create
+  end
+end
+
+%w(guide-algorithms ruby-on-rails-dev-box workstation).each do |git_project|
+  git "#{node[:projects_folder]}/vfn/#{git_project}" do
+    user node[:user]
+    group node[:group]
+    repository "#{node[:github][:account]}/#{git_project}.git"
+    revision 'master'
+    action :sync
+  end
+end
