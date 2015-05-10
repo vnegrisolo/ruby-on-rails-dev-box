@@ -1,0 +1,7 @@
+name             'ruby-on-rails-dev-box'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures ruby-on-rails-dev-box'
+long_description 'Installs/Configures ruby-on-rails-dev-box'
+version          '0.1.0'
