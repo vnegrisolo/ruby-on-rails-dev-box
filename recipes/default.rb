@@ -9,6 +9,13 @@
 
 include_recipe 'apt'
 include_recipe 'git'
+include_recipe 'oh_my_zsh'
+
+# %w().each do |package_name|
+#   package package_name do
+#     action :install
+#   end
+# end
 
 %w(vfn).each do |folder|
   directory "#{node[:projects_folder]}/#{folder}" do
