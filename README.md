@@ -1,42 +1,12 @@
-# ruby-on-rails-dev-box-cookbook
+# ruby-on-rails-dev-box
+A virtual machine :computer: with a ruby on rails development environment.
 
-TODO: Enter the cookbook description here.
+## Requirements
 
-## Supported Platforms
+* [VirtualBox](https://www.virtualbox.org)
+* [Vagrant](http://vagrantup.com)
+* [Chef-dk](https://downloads.chef.io/chef-dk/)
+* [Berk](http://berkshelf.com/)
+* local home called `projects` in the home directory: `~/projects`
 
-TODO: List your supported platforms.
-
-## Attributes
-
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['ruby-on-rails-dev-box']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
-
-## Usage
-
-### ruby-on-rails-dev-box::default
-
-Include `ruby-on-rails-dev-box` in your node's `run_list`:
-
-```json
-{
-  "run_list": [
-    "recipe[ruby-on-rails-dev-box::default]"
-  ]
-}
-```
-
-## License and Authors
-
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+## Install
