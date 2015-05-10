@@ -4,8 +4,12 @@ A virtual machine :computer: with a ruby on rails development environment.
 ## What is in the box:
 
 * [apt](https://github.com/opscode-cookbooks/apt) / apt-get;
-* [oh-my-zsh](https://github.com/shingara/oh-my-zsh-chef);
+* [htop](https://github.com/phlipper/chef-htop)
 * [git](https://github.com/jssjr/git);
+* [oh_my_zsh](https://github.com/shingara/oh-my-zsh-chef);
+* [ruby_build](https://github.com/fnichol/chef-ruby_build)
+* [rbenv](https://github.com/fnichol/chef-rbenv)
+* ruby 2.2.2;
 * my git projects;
 
 ## Requirements
