@@ -30,6 +30,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision :chef_solo do |chef|
     # chef.json = {}
+    chef.verbose_logging = true
     chef.run_list = [
       'recipe[ruby-on-rails-dev-box::default]'
     ]

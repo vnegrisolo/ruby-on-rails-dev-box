@@ -11,6 +11,9 @@ include_recipe 'apt'
 include_recipe 'htop'
 include_recipe 'git'
 include_recipe 'oh_my_zsh'
+include_recipe 'ruby_build'
+include_recipe 'rbenv::vagrant'
+include_recipe 'rbenv::user'
 
 # %w().each do |package_name|
 #   package package_name do
