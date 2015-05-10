@@ -8,6 +8,7 @@
 #
 
 include_recipe 'apt'
+include_recipe 'htop'
 include_recipe 'git'
 include_recipe 'oh_my_zsh'
 
