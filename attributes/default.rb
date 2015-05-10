@@ -20,8 +20,8 @@ default[:rbenv][:user_installs] = [{
   global: '2.2.2',
   gems: {
     '2.2.2' => [
-      # { name: 'bundler' },
-      # { name: 'rake' }
+      # { name: 'rake' },
+      { name: 'bundler' }
     ]
   }
 }]

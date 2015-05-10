@@ -10,6 +10,7 @@ A virtual machine :computer: with a ruby on rails development environment.
 * [ruby_build](https://github.com/fnichol/chef-ruby_build)
 * [rbenv](https://github.com/fnichol/chef-rbenv)
 * ruby 2.2.2;
+* gems: [`bundler`];
 * my git projects;
 
 ## Requirements
