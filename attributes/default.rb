@@ -4,6 +4,8 @@ default[:home] = "/home/#{default[:user]}"
 default[:projects_folder] = "#{default[:home]}/projects"
 default[:github][:account] = 'https://github.com/vnegrisolo'
 
+default[:github_projects] = %w(guide-algorithms ruby-on-rails-dev-box workstation)
+
 default[:oh_my_zsh][:users] = [{
   login: default[:user],
   theme: 'robbyrussell',
@@ -14,14 +16,10 @@ default[:oh_my_zsh][:repository] = 'https://github.com/robbyrussell/oh-my-zsh.gi
 
 default.set[:ruby_build][:upgrade] = true
 
+default[:ruby_version] = '2.2.2'
 default[:rbenv][:user_installs] = [{
   user: default[:user],
-  rubies: ['2.2.2'],
-  global: '2.2.2',
-  gems: {
-    '2.2.2' => [
-      # { name: 'rake' },
-      { name: 'bundler' }
-    ]
-  }
+  rubies: [default[:ruby_version]],
+  global: default[:ruby_version],
+  gems: { default[:ruby_version] => [{ name: 'bundler' }] }
 }]

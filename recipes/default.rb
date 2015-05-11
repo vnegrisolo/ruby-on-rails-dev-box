@@ -7,6 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
+node.set[:platform] = 'ubuntu'
+
 include_recipe 'apt'
 include_recipe 'htop'
 include_recipe 'git'
@@ -28,12 +30,10 @@ include_recipe 'rbenv::user'
   end
 end
 
-%w(guide-algorithms ruby-on-rails-dev-box workstation).each do |git_project|
+node[:github_projects].each do |git_project|
   git "#{node[:projects_folder]}/vfn/#{git_project}" do
-    user node[:user]
-    group node[:group]
     repository "#{node[:github][:account]}/#{git_project}.git"
+    action :checkout
     revision 'master'
-    action :sync
   end
 end
