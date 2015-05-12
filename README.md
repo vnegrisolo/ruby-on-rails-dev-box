@@ -3,15 +3,15 @@ A virtual machine :computer: with a ruby on rails development environment.
 
 ## What is in the box:
 
-* [apt](https://github.com/opscode-cookbooks/apt) / apt-get;
+* [apt](https://github.com/opscode-cookbooks/apt) / apt-get
 * [htop](https://github.com/phlipper/chef-htop)
-* [git](https://github.com/jssjr/git);
-* [oh_my_zsh](https://github.com/shingara/oh-my-zsh-chef);
+* [git](https://github.com/jssjr/git)
+* [oh_my_zsh](https://github.com/shingara/oh-my-zsh-chef)
 * [ruby_build](https://github.com/fnichol/chef-ruby_build)
 * [rbenv](https://github.com/fnichol/chef-rbenv)
-* ruby 2.2.2;
-* gems: [`bundler`];
-* my git projects;
+* **ruby** 2.2.2
+* gems: [**bundler**]
+* my projects
 
 ## Requirements
 
@@ -23,14 +23,16 @@ A virtual machine :computer: with a ruby on rails development environment.
 
 ## Install
 
-1. Download and Install `Virtual Box` - virtual machine provider;
-2. Download and Install `Vagrant` - virtualization tool;
-2. Download and Install `Chef-dk` - chef tools;
-3. Create a projects folder (sync folder) using: `mkdir ~/projects`
-4. Download the a project zip file from github download zip button;
-5. Install the ruby-on-rails-dev-box: `vagrant up`
-6. Connect to the virtual machine: `vagrant ssh`
-7. Copy the ssh keys to connect to github to the virtual machine
+1. Download and Install `Virtual Box` - virtual machine provider
+2. Download and Install `Vagrant` - virtualization tool
+3. Download and Install `Chef-dk` - chef tools
+4. Create a projects folder (sync folder) using: `mkdir ~/projects`
+5. Download the a project zip file from github download zip button
+6. Install the ruby-on-rails-dev-box: `vagrant up`
+7. Connect to the virtual machine: `vagrant ssh`
+8. Create ssh keys: `ssh-keygen -t rsa -C "your_email@example.com"`
+9. Copy the ssh key with `pbcopy < ~/.ssh/id_rsa.pub` and add it to the github settings
+10. Test github connection: `ssh -T git@github.com`
 
 ## Vagrant Commands
 
