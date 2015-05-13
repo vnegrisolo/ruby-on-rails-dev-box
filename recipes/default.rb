@@ -7,8 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-node.set[:platform] = 'ubuntu'
-
+include_recipe 'timezone-ii'
 include_recipe 'apt'
 include_recipe 'htop'
 include_recipe 'git'

@@ -2,6 +2,7 @@ source 'https://supermarket.chef.io'
 
 metadata
 
+cookbook 'timezone-ii'
 cookbook 'apt'
 cookbook 'htop'
 cookbook 'git'

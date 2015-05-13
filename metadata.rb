@@ -6,6 +6,9 @@ description 'Installs/Configures ruby-on-rails-dev-box'
 long_description 'Installs/Configures ruby-on-rails-dev-box'
 version '0.0.1'
 
+supports 'ubuntu'
+supports 'debian'
+
 depends 'apt'
 depends 'htop'
 depends 'git'

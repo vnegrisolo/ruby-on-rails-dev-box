@@ -12,6 +12,7 @@ A virtual machine :computer: with a ruby on rails development environment.
 * **ruby** 2.2.2
 * gems: [**bundler**]
 * my projects
+* timezone
 
 ## Requirements
 
@@ -22,6 +23,8 @@ A virtual machine :computer: with a ruby on rails development environment.
 * local home called `projects` in the home directory: `~/projects`
 
 ## Install
+
+The install process is taking about: **25 min**
 
 1. Download and Install `Virtual Box` - virtual machine provider
 2. Download and Install `Vagrant` - virtualization tool
