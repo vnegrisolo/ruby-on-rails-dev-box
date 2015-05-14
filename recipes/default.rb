@@ -7,6 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe 'build-essential'
 include_recipe 'timezone-ii'
 include_recipe 'apt'
 include_recipe 'htop'
