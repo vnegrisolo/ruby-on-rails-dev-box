@@ -27,5 +27,10 @@ default[:rbenv][:user_installs] = [{
   user: default[:user],
   rubies: [default[:ruby_version]],
   global: default[:ruby_version],
-  gems: { default[:ruby_version] => [{ name: 'bundler' }] }
+  gems: {
+    default[:ruby_version] => [
+      { name: 'bundler' },
+      { name: 'rails', version: '4.2.1' }
+    ]
+  }
 }]

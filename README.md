@@ -10,7 +10,8 @@ A virtual machine :computer: with a ruby on rails development environment.
 * [ruby_build](https://github.com/fnichol/chef-ruby_build)
 * [rbenv](https://github.com/fnichol/chef-rbenv)
 * **ruby** 2.2.2
-* gems: [**bundler**]
+* **rails** 4.2.1
+* gems: [**bundler**] (rake is already installed and I have no idea why, maybe because of the ruby version)
 * my projects
 * timezone
 
