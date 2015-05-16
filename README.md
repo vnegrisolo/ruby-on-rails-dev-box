@@ -13,7 +13,7 @@ A virtual machine :computer: with a ruby on rails development environment.
 * **rails** 4.2.1
 * gems: [**bundler**]
 * my projects
-* timezone
+* timezone, locale
 
 ## Requirements
 
