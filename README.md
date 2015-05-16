@@ -36,9 +36,8 @@ The install process is taking about: **25 min**
 5. Download the a project zip file from github download zip button
 6. Install the ruby-on-rails-dev-box: `vagrant up`
 7. Connect to the virtual machine: `vagrant ssh`
-8. Create ssh keys: `ssh-keygen -t rsa -C "your_email@example.com"`
-9. Copy the ssh key with `pbcopy < ~/.ssh/id_rsa.pub` and add it to the github settings
-10. Test github connection: `ssh -T git@github.com`
+8. Copy the ssh key with `pbcopy < ~/.ssh/id_rsa.pub` and add it to the github settings
+9. Test github connection: `ssh -T git@github.com`
 
 ## Vagrant Commands
 

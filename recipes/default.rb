@@ -14,31 +14,14 @@ include_recipe 'apt'
 include_recipe 'htop'
 include_recipe 'git'
 include_recipe 'oh_my_zsh'
-include_recipe 'ruby_build'
-include_recipe 'rbenv::vagrant'
-include_recipe 'rbenv::user'
-include_recipe 'redisio'
-include_recipe 'redisio::enable'
+include_recipe 'ruby-on-rails-dev-box::ruby'
+include_recipe 'ruby-on-rails-dev-box::redis'
 include_recipe 'nginx'
-include_recipe 'elasticsearch-ng'
+# # include_recipe 'elasticsearch-ng'
+include_recipe 'ruby-on-rails-dev-box::github'
 
 # %w().each do |package_name|
 #   package package_name do
 #     action :install
 #   end
 # end
-
-%w(vfn).each do |folder|
-  directory "#{node[:projects_folder]}/#{folder}" do
-    mode '0755'
-    action :create
-  end
-end
-
-node[:github_projects].each do |git_project|
-  git "#{node[:projects_folder]}/vfn/#{git_project}" do
-    repository "#{node[:github][:account]}/#{git_project}.git"
-    action :checkout
-    revision 'master'
-  end
-end
