@@ -64,11 +64,12 @@ the host computer and the virtual machine share a folder by `nfs` (more efficien
 
 ### Forward Ports
 
-| Port | What is for                               |
-| :--- | :---------------------------------------- |
-| 80   | [nginx http](http://192.168.33.10)        |
-| 443  | [nginx https](https://192.168.33.10)      |
-| 3000 | [rails server](http://192.168.33.10:3000) |
+| Port | What is for                                 |
+| :--- | :------------------------------------------ |
+| 80   | [nginx http](http://192.168.33.10)          |
+| 443  | [nginx https](https://192.168.33.10)        |
+| 3000 | [rails server](http://192.168.33.10:3000)   |
+| 9200 | [elastic search](http://192.168.33.10:9200) |
 
 ## References
 

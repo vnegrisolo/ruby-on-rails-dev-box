@@ -11,9 +11,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.network :private_network, ip: '192.168.33.10'
 
-  config.vm.network :forwarded_port, guest: 80, host: 80
-  config.vm.network :forwarded_port, guest: 443, host: 443
-  config.vm.network :forwarded_port, guest: 3000, host: 3000
+  [80, 443, 3000, 9200].each do |port|
+    config.vm.network :forwarded_port, guest: port, host: port
+  end
 
   host_folder = "~/#{SYNCED_FOLDER}"
   vm_folder = "/home/vagrant/#{SYNCED_FOLDER}"

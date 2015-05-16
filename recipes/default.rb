@@ -17,7 +17,7 @@ include_recipe 'oh_my_zsh'
 include_recipe 'ruby-on-rails-dev-box::ruby'
 include_recipe 'ruby-on-rails-dev-box::redis'
 include_recipe 'nginx'
-# # include_recipe 'elasticsearch-ng'
+include_recipe 'ruby-on-rails-dev-box::elasticsearch'
 include_recipe 'ruby-on-rails-dev-box::github'
 
 # %w().each do |package_name|
