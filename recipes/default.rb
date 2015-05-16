@@ -19,6 +19,7 @@ include_recipe 'rbenv::vagrant'
 include_recipe 'rbenv::user'
 include_recipe 'redisio'
 include_recipe 'redisio::enable'
+include_recipe 'nginx'
 
 # %w().each do |package_name|
 #   package package_name do

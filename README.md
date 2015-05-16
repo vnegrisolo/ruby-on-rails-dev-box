@@ -9,6 +9,7 @@ A virtual machine :computer: with a ruby on rails development environment.
 * [oh_my_zsh](https://github.com/shingara/oh-my-zsh-chef)
 * [rbenv](https://github.com/fnichol/chef-rbenv)
 * [redis](https://github.com/brianbianco/redisio)
+* [nginx](https://github.com/miketheman/nginx)
 * **ruby** 2.2.2
 * **rails** 4.2.1
 * gems: [**bundler**]
@@ -65,6 +66,8 @@ the host computer and the virtual machine share a folder by `nfs` (more efficien
 
 | Port | What is for                               |
 | :--- | :---------------------------------------- |
+| 80   | [nginx http](http://192.168.33.10)        |
+| 443  | [nginx https](https://192.168.33.10)      |
 | 3000 | [rails server](http://192.168.33.10:3000) |
 
 ## References
