@@ -16,6 +16,8 @@ include_recipe 'oh_my_zsh'
 include_recipe 'ruby_build'
 include_recipe 'rbenv::vagrant'
 include_recipe 'rbenv::user'
+include_recipe 'redisio'
+include_recipe 'redisio::enable'
 
 # %w().each do |package_name|
 #   package package_name do

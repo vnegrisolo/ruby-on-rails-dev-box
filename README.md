@@ -7,11 +7,11 @@ A virtual machine :computer: with a ruby on rails development environment.
 * [htop](https://github.com/phlipper/chef-htop)
 * [git](https://github.com/jssjr/git)
 * [oh_my_zsh](https://github.com/shingara/oh-my-zsh-chef)
-* [ruby_build](https://github.com/fnichol/chef-ruby_build)
 * [rbenv](https://github.com/fnichol/chef-rbenv)
+* [redis](https://github.com/brianbianco/redisio)
 * **ruby** 2.2.2
 * **rails** 4.2.1
-* gems: [**bundler**] (rake is already installed and I have no idea why, maybe because of the ruby version)
+* gems: [**bundler**]
 * my projects
 * timezone
 
@@ -44,19 +44,16 @@ The install process is taking about: **25 min**
 vagrant <command>
 ```
 
-<table>
-  <thead><tr><th>Command</th><th>Description</th></tr></thead>
-  <tbody>
-    <tr><td>up</td><td>starts the virtual machine</td></tr>
-    <tr><td>status</td><td>check the status for the virtual machine</td></tr>
-    <tr><td>ssh</td><td>connect to the virtual machine by ssh</td></tr>
-    <tr><td>halt</td><td>stops the virtual machine</td></tr>
-    <tr><td>provision</td><td>run the provision commands to the virtual machine, in this case the `chef-solo`</td></tr>
-    <tr><td>suspend</td><td>save the current status of the virtual machine and hibernate it</td></tr>
-    <tr><td>resume</td><td>resume the virtual machine from suspension</td></tr>
-    <tr><td>destroy</td><td>destroy the virtual machine</td></tr>
-  </tbody>
-</table>
+| Command   | Description                                                                     |
+| :-------- | :------------------------------------------------------------------------------ |
+| up        | starts the virtual machine                                                      |
+| status    | check the status for the virtual machine                                        |
+| ssh       | connect to the virtual machine by ssh                                           |
+| halt      | stops the virtual machine                                                       |
+| provision | run the provision commands to the virtual machine, in this case the `chef-solo` |
+| suspend   | save the current status of the virtual machine and hibernate it                 |
+| resume    | resume the virtual machine from suspension                                      |
+| destroy   | destroy the virtual machine                                                     |
 
 ## Virtual Machine configuration
 
@@ -66,13 +63,9 @@ the host computer and the virtual machine share a folder by `nfs` (more efficien
 
 ### Forward Ports
 
-host computer forwards to virtual machine through ports:
-<table>
-  <thead><tr><th>Port</th><th>What is for</th><th>url</th></tr></thead>
-  <tbody>
-    <tr><td>3000</td><td>rails server</td><td>http://192.168.33.10:3000</td></tr>
-  </tbody>
-</table>
+| Port | What is for                               |
+| :--- | :---------------------------------------- |
+| 3000 | [rails server](http://192.168.33.10:3000) |
 
 ## References
 
