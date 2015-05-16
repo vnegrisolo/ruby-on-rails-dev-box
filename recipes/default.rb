@@ -20,6 +20,7 @@ include_recipe 'rbenv::user'
 include_recipe 'redisio'
 include_recipe 'redisio::enable'
 include_recipe 'nginx'
+include_recipe 'elasticsearch-ng'
 
 # %w().each do |package_name|
 #   package package_name do

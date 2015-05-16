@@ -10,6 +10,7 @@ A virtual machine :computer: with a ruby on rails development environment.
 * [rbenv](https://github.com/fnichol/chef-rbenv)
 * [redis](https://github.com/brianbianco/redisio)
 * [nginx](https://github.com/miketheman/nginx)
+* [elastic-search](https://github.com/nathwill/chef-elasticsearch-ng)
 * **ruby** 2.2.2
 * **rails** 4.2.1
 * gems: [**bundler**]
