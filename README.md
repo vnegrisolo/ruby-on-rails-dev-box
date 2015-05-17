@@ -14,6 +14,7 @@
 * [elastic-search](https://github.com/nathwill/chef-elasticsearch-ng)
 * [postgresql](https://github.com/hw-cookbooks/postgresql)
 * [mysql](https://github.com/chef-cookbooks/mysql)
+* [nodejs](https://github.com/redguide/nodejs)
 * **ruby** 2.2.2
 * **rails** 4.2.1
 * gems: [**bundler**]
