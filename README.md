@@ -18,7 +18,9 @@
 * **rails** 4.2.1
 * gems: [**bundler**]
 * my projects
+* my dotfiles project
 * timezone, locale
+* neobundle for vim
 
 ## Requirements
 
