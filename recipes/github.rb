@@ -1,9 +1,15 @@
+email = node[:github][:email]
 id_rsa = "#{node[:home]}/.ssh/id_rsa"
-execute 'ssh key gen' do
+
+bash 'ssh key gen' do
   user node[:user]
   group node[:group]
-  command "ssh-keygen -t rsa -C '#{node[:github][:email]}' -N '' -f '#{id_rsa}'"
   not_if { ::File.exist?(id_rsa) }
+  code <<-EOH
+    ssh-keygen -t rsa -C '#{email}' -N '' -f '#{id_rsa}'
+    eval "$(ssh-agent -s)"
+    ssh-add #{id_rsa}
+  EOH
 end
 
 node[:github][:projects].each do |account, projects|
