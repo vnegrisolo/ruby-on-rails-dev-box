@@ -1,5 +1,6 @@
 # ruby-on-rails-dev-box
-A virtual machine :computer: with a ruby on rails development environment.
+:computer: A Virtual Machine for a ruby on rails developer
+[![Build Status](https://semaphoreci.com/api/v1/projects/10e08dd2-fcf8-406a-80b7-d1c838034de9/426309/badge.svg)](https://semaphoreci.com/vnegrisolo/ruby-on-rails-dev-box)
 
 ## What is in the box:
 
@@ -12,6 +13,7 @@ A virtual machine :computer: with a ruby on rails development environment.
 * [nginx](https://github.com/miketheman/nginx)
 * [elastic-search](https://github.com/nathwill/chef-elasticsearch-ng)
 * [postgresql](https://github.com/hw-cookbooks/postgresql)
+* [mysql](https://github.com/chef-cookbooks/mysql)
 * **ruby** 2.2.2
 * **rails** 4.2.1
 * gems: [**bundler**]
@@ -28,7 +30,7 @@ A virtual machine :computer: with a ruby on rails development environment.
 
 ## Install
 
-The install process is taking about: **25 min**
+The install process is taking about: **50 min**
 
 1. Download and Install `Virtual Box` - virtual machine provider
 2. Download and Install `Vagrant` - virtualization tool

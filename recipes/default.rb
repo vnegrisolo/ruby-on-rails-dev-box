@@ -10,10 +10,5 @@ include_recipe 'ruby-on-rails-dev-box::redis'
 include_recipe 'nginx'
 include_recipe 'ruby-on-rails-dev-box::elasticsearch'
 include_recipe 'ruby-on-rails-dev-box::github'
-
-# %w().each do |package_name|
-#   package package_name do
-#     action :install
-#   end
-# end
 include_recipe 'ruby-on-rails-dev-box::postgresql'
+include_recipe 'ruby-on-rails-dev-box::mysql'
