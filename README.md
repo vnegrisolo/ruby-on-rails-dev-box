@@ -11,6 +11,7 @@ A virtual machine :computer: with a ruby on rails development environment.
 * [redis](https://github.com/brianbianco/redisio)
 * [nginx](https://github.com/miketheman/nginx)
 * [elastic-search](https://github.com/nathwill/chef-elasticsearch-ng)
+* [postgresql](https://github.com/hw-cookbooks/postgresql)
 * **ruby** 2.2.2
 * **rails** 4.2.1
 * gems: [**bundler**]

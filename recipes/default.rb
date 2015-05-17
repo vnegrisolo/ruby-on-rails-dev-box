@@ -1,12 +1,3 @@
-#
-# Cookbook Name:: ruby-on-rails-dev-box
-# Recipe:: default
-#
-# Copyright (C) 2015 Vinicius Negrisolo
-#
-# All rights reserved - Do Not Redistribute
-#
-
 include_recipe 'build-essential'
 include_recipe 'timezone-ii'
 include_recipe 'locale'
@@ -25,3 +16,4 @@ include_recipe 'ruby-on-rails-dev-box::github'
 #     action :install
 #   end
 # end
+include_recipe 'ruby-on-rails-dev-box::postgresql'
