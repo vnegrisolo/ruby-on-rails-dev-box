@@ -75,6 +75,8 @@ the host computer and the virtual machine share a folder by `nfs` (more efficien
 | 80   | [nginx http](http://192.168.33.10)          |
 | 443  | [nginx https](https://192.168.33.10)        |
 | 3000 | [rails server](http://192.168.33.10:3000)   |
+| 5432 | [postgresql](http://192.168.33.10:5432)     |
+| 6379 | [redis](http://192.168.33.10:6379)          |
 | 9200 | [elastic search](http://192.168.33.10:9200) |
 
 ## References
