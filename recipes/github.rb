@@ -22,7 +22,7 @@ node[:github][:projects].each do |account, projects|
     git "#{node[:projects_folder]}/#{account}/#{project}" do
       user node[:user]
       group node[:group]
-      repository "https://github.com/#{account}/#{project}.git"
+      repository "git@github.com:#{account}/#{project}.git"
       action :checkout
       revision 'master'
     end
