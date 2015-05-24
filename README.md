@@ -1,4 +1,5 @@
-# ruby-on-rails-dev-box [![Build Status](https://semaphoreci.com/api/v1/projects/10e08dd2-fcf8-406a-80b7-d1c838034de9/426309/badge.svg)](https://semaphoreci.com/vnegrisolo/ruby-on-rails-dev-box)
+# ruby-on-rails-dev-box
+[![Build Status](https://travis-ci.org/vnegrisolo/ruby-on-rails-dev-box.svg)](https://travis-ci.org/vnegrisolo/ruby-on-rails-dev-box)
 
 :computer: A Virtual Machine for a ruby on rails developer
 
