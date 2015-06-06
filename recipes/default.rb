@@ -1,5 +1,4 @@
 include_recipe 'build-essential'
-include_recipe 'timezone-ii'
 include_recipe 'locale'
 include_recipe 'apt'
 include_recipe 'htop'

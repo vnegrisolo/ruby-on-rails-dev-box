@@ -10,7 +10,6 @@ supports 'ubuntu'
 supports 'debian'
 
 depends 'build-essential'
-depends 'timezone-ii'
 depends 'locale'
 depends 'apt'
 depends 'htop'

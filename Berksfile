@@ -3,7 +3,6 @@ source 'https://supermarket.chef.io'
 metadata
 
 cookbook 'build-essential'
-cookbook 'timezone-ii'
 cookbook 'locale'
 cookbook 'apt'
 cookbook 'htop'
