@@ -9,7 +9,7 @@ default[:rbenv][:user_installs] = [{
   gems: {
     default[:ruby_version] => [
       { name: 'bundler' },
-      { name: 'rails', version: '4.2.1' }
+      { name: 'rails', version: '4.2.3' }
     ]
   }
 }]
