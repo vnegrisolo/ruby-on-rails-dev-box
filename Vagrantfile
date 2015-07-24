@@ -19,7 +19,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.synced_folder host_folder, vm_folder, nfs: true
 
   config.vm.provider 'virtualbox' do |p|
-    p.memory = 2048
+    p.memory = 3072
     p.cpus = 4
   end
 
@@ -30,10 +30,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.berkshelf.enabled = true
 
   config.vm.provision :chef_solo do |chef|
-    # chef.json = {}
     chef.verbose_logging = true
-    chef.run_list = [
-      'recipe[ruby-on-rails-dev-box::default]'
-    ]
+    chef.run_list = ['recipe[ruby-on-rails-dev-box::default]']
   end
 end
