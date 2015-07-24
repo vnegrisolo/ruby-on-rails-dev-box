@@ -6,8 +6,7 @@ SYNCED_FOLDER = 'projects'
 Vagrant.require_version '>= 1.5.0'
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = 'ubuntu/trusty64'
-  config.vm.hostname = 'ruby-on-rails-dev-box'
+  config.vm.box = 'boxcutter/ubuntu1504'
 
   config.vm.network :private_network, ip: '192.168.33.10'
 
