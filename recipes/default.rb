@@ -8,7 +8,6 @@ include_recipe 'ruby-on-rails-dev-box::vim_neobundle'
 
 include_recipe 'ruby-on-rails-dev-box::ruby'
 include_recipe 'nodejs'
-include_recipe 'ruby-on-rails-dev-box::phantomjs'
 
 include_recipe 'ruby-on-rails-dev-box::redis'
 include_recipe 'ruby-on-rails-dev-box::elasticsearch'
