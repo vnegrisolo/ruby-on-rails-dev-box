@@ -15,7 +15,7 @@
 * [elastic-search](https://github.com/nathwill/chef-elasticsearch-ng)
 * [postgresql](https://github.com/hw-cookbooks/postgresql)
 * [mysql](https://github.com/chef-cookbooks/mysql)
-* **ruby** 2.2.3
+* **ruby** 2.3.0
 * my projects from github
 * my dotfiles project
 * timezone, locale
